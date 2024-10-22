@@ -36,7 +36,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 280,
+        "x": 220,
         "y": 120,
         "wires": [
             [
@@ -149,7 +149,7 @@
         "type": "function",
         "z": "1be6dca12996ded9",
         "name": "function 4",
-        "func": "\nreturn msg;",
+        "func": "node.warn(\"FUNC 1\");\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -169,7 +169,7 @@
         "type": "function",
         "z": "1be6dca12996ded9",
         "name": "function 5",
-        "func": "\nreturn msg;",
+        "func": "node.warn(\"FUNC 2\");\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -189,14 +189,14 @@
         "type": "function",
         "z": "1be6dca12996ded9",
         "name": "function 6",
-        "func": "\nreturn msg;",
+        "func": "node.warn(\"FUNC 3\");\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
+        "x": 720,
         "y": 80,
         "wires": [
             [
